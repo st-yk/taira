@@ -15,3 +15,4 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.paths << Rails.root.join("vendor", "original_assets", "images")
 Rails.application.config.assets.paths << Rails.root.join("vendor", "original_assets", "stylesheets")
 Rails.application.config.assets.paths << Rails.root.join("vendor", "original_assets", "javascripts")
+# Rails.application.config.assets.precompile += ['*.js','*.css']

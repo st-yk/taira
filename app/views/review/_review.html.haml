@@ -12,7 +12,8 @@
     こちらより、reviewを御承っております。
     よろしくお願いします。
 
-  .review__form
+  -# .review__form{id:"#{review.id}"}
+  #id_review.class_review__form
   = form_for ('@review') do |f|
     = f.text_field :name, class: 'form__name', placeholder: 'お名前'
     = f.text_field :comment, class: 'form__review', placeholder: 'レビューを入力してください'

@@ -9,16 +9,18 @@ class ReviewController < ApplicationController
 
   def create
     # binding.pry
-    Review.create(review_params)
-    # @review.save
-    redirect_to review_index_path
-    # render action: :new
+    # Review.create(review_params)
+    @reviews = Review.create(review_params)
+      if @reviews.save
+        respond_to do |format|
+          format.html { redirect_to review_index_path}
+          format.json
+        end
+        else
+          flash.now[:alart] = 'レビューを記入してください'
+          render :index
+      end
   end
-
-  # def create_index
-  #   puts "#{@review.name}"
-  # end
-
   private
   def review_params
     params.require('@review').permit(:name,:age,:comment)
@@ -27,5 +29,4 @@ class ReviewController < ApplicationController
   def set_review
     @reviews = Review.all
   end
-
 end

@@ -66,3 +66,6 @@ end
   gem 'fullcalendar-rails'
   gem 'pry-rails'
   gem 'jquery-rails'
+  # gem 'sprockets', '2.11.0'
+# gem 'slim', '2.0.0'
+# gem 'sprockets-rails', '2.0.0'
