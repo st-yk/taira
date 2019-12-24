@@ -1,0 +1,70 @@
+
+.body{
+  background-color: whitesmoke;
+  
+  .roppongi{
+    text-align: center;
+    &__title{
+      font-size: 50px;
+      margin-top: 80px;
+    }
+    &__img{
+    }
+    &__text{
+        padding: 0.5em 1em;
+        margin: 2em 10em;
+        font-weight: bold;
+        border: solid 3px #6d6e16;
+    }
+    &__text p {
+        margin: 0; 
+        padding: 0;
+    }
+  }
+
+
+  .sirogane{
+    text-align: center;
+    
+    &__title{
+      font-size: 50px;
+      margin-top: 80px;
+    }
+    &__img{
+
+    }
+    &__text{
+      padding: 0.5em 1em;
+      margin: 2em 10em;
+      font-weight: bold;
+      border: solid 3px #6d6e16;
+    }
+    &__text p {
+        margin: 0; 
+        padding: 0;
+        
+    }
+  }
+
+  .yakitori{
+    text-align: center;
+    &__title{
+      font-size: 50px;
+      margin-top: 80px;
+    }
+    &__img{
+
+    }
+    &__text{
+        padding: 0.5em 1em;
+        margin: 2em 10em 5em 10em;
+        font-weight: bold;
+        border: solid 3px #6d6e16;
+    }
+    &__text p {
+        margin: 0; 
+        padding: 0;
+      
+    }
+  }
+}

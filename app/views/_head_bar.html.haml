@@ -1,0 +1,21 @@
+.header
+  .left-content
+    .left-content__name
+      = link_to root_path do
+        鯛良
+    .left-content__word
+      六本木・寿司
+  .right-content
+    .right-content__info
+      = link_to info_index_path do
+        %i.fa.fa-info-circle
+    .right-content__menu
+      = link_to menu_index_path do
+        %i.fa.fa-book-open
+    .right-content__tel
+      = link_to reservation_index_path do
+        %i.fa.fa-phone
+    .right-content__smile
+      = link_to review_index_path do
+        %i.fa.fa-smile
+        

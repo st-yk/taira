@@ -1,0 +1,31 @@
+.body{
+  overflow: scroll;
+  height: 100vw;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  &__pickup{
+    margin: 100px auto;
+    height: 400px;
+    text-align: center;
+  }
+
+  .body__box{
+    display: flex;
+    justify-content: space-around;
+  &__accsess{
+      .body__accsess-map{
+      }
+      .body__accsess-info{
+      }
+  }
+
+  &__movie{
+    .body__movie-youtube{
+    }
+    .body__movie-info{
+    }
+    }
+  }
+}
+
