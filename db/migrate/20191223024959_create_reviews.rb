@@ -4,6 +4,7 @@ class CreateReviews < ActiveRecord::Migration[5.2]
       t.string :name :null false
       t.integer :age :null false
       t.text :comment :null false
+      drop_table :rocords
       t.timestamps
     end
   end

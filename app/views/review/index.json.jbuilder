@@ -1,5 +1,5 @@
-json.array! @reviews do |review|
-  json.name review.name
-  json.age review.age
-  json.comment review.comment
+json.array! @coms do |com|
+  json.name com.name
+  json.age com.age
+  json.comment com.comment
 end

@@ -1,22 +1,26 @@
 .body
-  .review-list
-    .review
-      -# 表示はできたけど、横並びになっているので整えたい
-      - @reviews.each do|review|
-        = review.name
-        = review.age
-        = review.comment
-      
+  .review-box
+    .reviews
+      - @coms.each do|com|
+        .review-name
+          名前:
+          = com.name
+        .review-age
+          年齢:(
+          = com.age
+          代)
+        .review-comment
+          = com.comment
+      -# = render 'com'
   .review-invite
-    御来店下さいまして誠にありがとうございます。
-    こちらより、reviewを御承っております。
-    よろしくお願いします。
+    %p 御来店下さいまして誠にありがとうございます。
+    %p こちらより、reviewを御承っております。
 
-  -# .review__form{id:"#{review.id}"}
-  #id_review.class_review__form
-  = form_for ('@review') do |f|
-    = f.text_field :name, class: 'form__name', placeholder: 'お名前'
-    = f.text_field :comment, class: 'form__review', placeholder: 'レビューを入力してください'
-    = f.number_field :age, step: "10" , class: "form__age", placeholder: '年齢'
-    .review__form-btn
-      = f.submit 'ごちそうさまでした！', class: 'form__submit'
+  #id_review
+    = form_for ('@coms') do |f|
+      = f.text_field :name, class: 'form__name', placeholder: 'お名前'
+      = f.number_field :age, step: "10" , class: "form__age", placeholder: '年齢'
+      .review__form-text
+        = f.text_field :comment, class: 'form__review', placeholder: 'レビューを入力してください'
+      .review__form-btn
+        = f.submit 'ごちそうさまでした！', class: 'form__submit'

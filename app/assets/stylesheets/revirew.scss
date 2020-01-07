@@ -1,3 +1,48 @@
-.review{
-  display: flex;
+.review-box{
+  width: 650px;
+  height: 300px;
+  overflow: scroll;
+  background-color: white;
+  margin: 40px auto;
+  
+  .reviews{
+    background-color: pink;
+    // height: 80px;
+      .review-name{
+        font-size: 12px;
+        padding-top: 10px;
+      }
+      .review-age{
+        font-size: 12px;
+      }
+      .review-comment{
+        font-size: 18px;
+      }
+    }
+  }
+
+
+.review-invite{
+margin-top: 50px;
+margin-bottom: 30px;
+}
+
+.review__form{
+  &__name{
+    margin-right: 5px;
+  }
+}
+.form__name{
+  margin-right: 10px;
+}
+.review__form-text{
+  margin-top: 30px;
+  .form__review{
+    height: 85px;
+    width: 375px;
+  }
+
+}
+.review__form-btn{
+  margin-top: 20px;
 }

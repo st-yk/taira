@@ -1,0 +1,12 @@
+
+.review-one
+  - @coms.each do|com|
+    .review-name
+      名前:
+      = com.name
+    .review-age
+      年齢:(
+      = com.age
+      代)
+    .review-comment
+      = com.comment

@@ -1,49 +1,45 @@
-// $(document).on('turbolinks:load', function(){
-  $(function(){
-    $("#id_review").on("submit", function(){
-      console.log("www");
-      e.preventDefault()
-      // console.logを用いてイベント発火しているか確
-    });
-  });
-// });
+// $(function(){
+//   $('#id_review').on('submit', function(e){
+//     e.preventDefault()
+//     var formData = new FormData(this);
+//     var url = $(this).attr('action')
+//     console.log(this);
+
+    // $.ajax({
+    //   url: url,
+    //   type: "POST",
+    //   data: formData,
+    //   dataType: 'json',
+    //   processData: false,
+    //   contentType: false
+    //   .done(function(data){
+    //     $(revirew)();
+    //     data.forEach(function(){
+    //       $('review').append('//どこにアッぺんどするか記述してね');
+    //     })
+    //   .fail(function(){
+    //     alert('検索に失敗しました')
+    //   })
+    //   })
+    // })
+    // });
+  // });
 
 
-
-
-
-
-// $(document).on(function(){
-//   $('form__submit').on('submit', function(e){
-//     e.preventDefault();
-//     var review = new FormData(this); //フォームに入力した値を取得しています。
-//     console.log();
-//   })
-
-
-// jQuery(document).on('turbolinks:load', function(){
-  // $(function(){
-  //   $(".form__submit").on('submit', function(e){
-  //     console.log('www');
-  //     e.preventDefault()
-  //     var input = $(".review__form").var();
-  //     $.ajax({
-  //       //サーバに送信するリクエストの設定
-  //       type: 'POST',
-  //       url: url,//コントローラ？何をかくか？,パスを書いて見た
-  //       data: {keyword: input}, //フォームの値とは？
-  //       dataType: 'json'
-  //       .done(function(data){
-  //         //通信に成功した場合の処理
-  //         $(revirew)();
-  //         data.forEach(function(){
-  //           $('review').append('<li>${review.name}</li>');
-  //         })
-  //       .fail(function(){
-  //         //通信に失敗した場合の処理
-  //         alert('検索に失敗しました')
-  //       })
-  //       })
-  //     })
-  //   })
-  // })
+  // function buildHTML(com){
+  //     var html =
+  //               `<div class="review">
+  //                 <div class="review-name">
+  //                   ${com.name}
+  //                 </div>
+  //                 <div class="review-age">
+  //                   ${com.age}
+  //                 </div>
+  //                 <div class="review-comment">
+  //                   ${com.comment}
+  //                 </div>
+  //               </div>`
+  //               return html;
+  //             };
+// })
+// })
